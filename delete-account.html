@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Account — Daily Manna</title>
+  <meta name="description" content="How to delete your Daily Manna account and data.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #2C3E50;
+      --secondary: #4CA1AF;
+      --accent: #F8D07A;
+      --bg-dark: #1a1a2e;
+      --text-primary: #FFFFFF;
+      --text-secondary: rgba(255, 255, 255, 0.75);
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, var(--bg-dark) 0%, var(--primary) 50%, var(--secondary) 100%);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .bg-glow {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.15;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .bg-glow-1 { width: 400px; height: 400px; background: var(--secondary); top: -100px; left: -100px; }
+    .bg-glow-2 { width: 300px; height: 300px; background: var(--accent); bottom: 100px; right: -50px; }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 40px;
+      opacity: 0.9;
+      transition: opacity 0.2s;
+    }
+    .back-link:hover { opacity: 1; }
+
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .logo { font-size: 40px; margin-bottom: 12px; }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 36px;
+      margin-bottom: 24px;
+      backdrop-filter: blur(10px);
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    p:last-child { margin-bottom: 0; }
+
+    ol, ul {
+      color: var(--text-secondary);
+      font-size: 15px;
+      line-height: 1.8;
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    ol li, ul li { margin-bottom: 8px; }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--accent);
+      color: var(--primary);
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 14px;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 4px;
+      margin-bottom: 16px;
+      color: var(--text-secondary);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .email-box {
+      background: rgba(248, 208, 122, 0.1);
+      border: 1px solid rgba(248, 208, 122, 0.3);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-top: 16px;
+      font-size: 15px;
+      color: var(--accent);
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 48px;
+      color: var(--text-secondary);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Daily Manna</a>
+
+    <div class="header">
+      <div class="logo">🗑️</div>
+      <h1>Delete Your Account</h1>
+      <p class="subtitle">You can delete your account directly in the app or by contacting us.</p>
+    </div>
+
+    <div class="card">
+      <h2>Option 1 — Delete in the App</h2>
+      <div class="step">
+        <span class="step-number">1</span>
+        <span>Open the Daily Manna app and go to the <strong>Profile</strong> tab.</span>
+      </div>
+      <div class="step">
+        <span class="step-number">2</span>
+        <span>Scroll down to the <strong>Danger Zone</strong> section.</span>
+      </div>
+      <div class="step">
+        <span class="step-number">3</span>
+        <span>Tap <strong>"Delete Account"</strong> and confirm the action.</span>
+      </div>
+      <p>Your account and all associated data will be permanently deleted immediately.</p>
+    </div>
+
+    <div class="card">
+      <h2>Option 2 — Contact Us</h2>
+      <p>If you are unable to access the app, you can request account deletion by sending an email to:</p>
+      <div class="email-box">
+        <a href="mailto:therhema.app@gmail.com">therhema.app@gmail.com</a>
+      </div>
+      <p style="margin-top: 16px;">Please include the email address or Google/Apple account associated with your Daily Manna account. We will process your request within 7 business days.</p>
+    </div>
+
+    <div class="card">
+      <h2>What Data Is Deleted</h2>
+      <p>When your account is deleted, the following data is permanently removed:</p>
+      <ul>
+        <li>Your display name and account preferences</li>
+        <li>Your Firebase authentication record</li>
+        <li>Your FCM push notification token</li>
+        <li>Any referral or premium status linked to your account</li>
+      </ul>
+      <p>Anonymous analytics data (non-identifiable) may be retained as required by Google Firebase's data retention policies.</p>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 Daily Manna. All rights reserved. · <a href="privacy-policy.html">Privacy Policy</a></p>
+    </div>
+  </div>
+</body>
+</html>
