@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Daily Manna</title>
+  <meta name="description" content="Privacy Policy for Daily Manna app.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #2C3E50;
+      --secondary: #4CA1AF;
+      --accent: #F8D07A;
+      --bg-dark: #1a1a2e;
+      --text-primary: #FFFFFF;
+      --text-secondary: rgba(255, 255, 255, 0.75);
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, var(--bg-dark) 0%, var(--primary) 50%, var(--secondary) 100%);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .bg-glow {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.15;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .bg-glow-1 { width: 400px; height: 400px; background: var(--secondary); top: -100px; left: -100px; }
+    .bg-glow-2 { width: 300px; height: 300px; background: var(--accent); bottom: 100px; right: -50px; }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 40px;
+      opacity: 0.9;
+      transition: opacity 0.2s;
+    }
+    .back-link:hover { opacity: 1; }
+
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .logo {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 36px;
+      margin-bottom: 24px;
+      backdrop-filter: blur(10px);
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      color: var(--text-secondary);
+      font-size: 15px;
+      line-height: 1.8;
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    ul li { margin-bottom: 6px; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .footer {
+      text-align: center;
+      margin-top: 48px;
+      color: var(--text-secondary);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Daily Manna</a>
+
+    <div class="header">
+      <div class="logo">📖</div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">Last updated: May 20, 2026</p>
+    </div>
+
+    <div class="card">
+      <h2>1. Introduction</h2>
+      <p>Welcome to <strong>Daily Manna</strong> ("we", "our", or "us"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+      <p>By using Daily Manna, you agree to the collection and use of information in accordance with this policy.</p>
+    </div>
+
+    <div class="card">
+      <h2>2. Information We Collect</h2>
+      <p>We collect the following types of information:</p>
+      <ul>
+        <li><strong>Account information:</strong> If you sign in with Google or Apple, we receive your name and email address.</li>
+        <li><strong>Anonymous identifier:</strong> Users who do not sign in are assigned an anonymous Firebase ID.</li>
+        <li><strong>Device token:</strong> A Firebase Cloud Messaging (FCM) token used to deliver push notifications.</li>
+        <li><strong>Preferences:</strong> Your in-app settings such as notification preferences and display name.</li>
+        <li><strong>Usage data:</strong> Anonymous analytics data (screen views, events) collected via Firebase Analytics.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. How We Use Your Information</h2>
+      <p>We use the collected information to:</p>
+      <ul>
+        <li>Provide and improve the app experience</li>
+        <li>Send daily verse push notifications (only if enabled by you)</li>
+        <li>Synchronize your preferences across devices when signed in</li>
+        <li>Analyze usage patterns to improve the app (anonymous data only)</li>
+        <li>Process in-app purchases and subscriptions via RevenueCat</li>
+      </ul>
+      <p>We do not sell, trade, or rent your personal information to third parties.</p>
+    </div>
+
+    <div class="card">
+      <h2>4. Third-Party Services</h2>
+      <p>Daily Manna uses the following third-party services, each with their own privacy policies:</p>
+      <ul>
+        <li><strong>Firebase (Google):</strong> Authentication, database, analytics, and push notifications — <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a></li>
+        <li><strong>Google Sign-In:</strong> Optional authentication — <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+        <li><strong>Apple Sign-In:</strong> Optional authentication — <a href="https://www.apple.com/legal/privacy/" target="_blank">Privacy Policy</a></li>
+        <li><strong>RevenueCat:</strong> Subscription management — <a href="https://www.revenuecat.com/privacy" target="_blank">Privacy Policy</a></li>
+        <li><strong>Google AdMob:</strong> Advertising (free tier only) — <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+        <li><strong>Firebase Crashlytics:</strong> Crash reporting — <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>5. Data Retention</h2>
+      <p>We retain your data for as long as your account is active or as needed to provide you with the service. You may request deletion of your data at any time by contacting us or using the "Delete Account" option within the app.</p>
+    </div>
+
+    <div class="card">
+      <h2>6. Children's Privacy</h2>
+      <p>Daily Manna is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
+    </div>
+
+    <div class="card">
+      <h2>7. Your Rights</h2>
+      <p>Depending on your location, you may have the right to:</p>
+      <ul>
+        <li>Access the personal data we hold about you</li>
+        <li>Request correction or deletion of your data</li>
+        <li>Opt out of push notifications at any time via device settings</li>
+        <li>Revoke Google or Apple Sign-In access via your account settings</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>8. Security</h2>
+      <p>We implement appropriate technical and organizational measures to protect your information. All data is stored securely using Firebase, which is compliant with industry security standards.</p>
+    </div>
+
+    <div class="card">
+      <h2>9. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by updating the date at the top of this page. Continued use of the app after changes constitutes acceptance of the new policy.</p>
+    </div>
+
+    <div class="card">
+      <h2>10. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+      <p><a href="mailto:therhema.app@gmail.com">therhema.app@gmail.com</a></p>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 Daily Manna. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
